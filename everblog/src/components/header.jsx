@@ -5,23 +5,22 @@ function Header() {
 		<div className="wrapper">
 			<div className="logo-header">
 				<img src={require("../images/logo.png")} alt="logo everblog" />
-				<h1>FOTOLOG</h1>
+				<h1>EVERBLOG</h1>
 			</div>
 
 			<div className="form-container">
-				<form action="">
-					<label htmlFor="search-user">
+				<div class="wrap">
+					<div class="search">
 						<input
-							type="search"
-							name="search-user"
-							id="search-user"
+							type="text"
+							class="searchTerm"
+							placeholder="Buscar..."
 						/>
-					</label>
-
-					<button type="submit" id="boton">
-						🔎
-					</button>
-				</form>
+						<button type="submit" class="searchButton">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
 			</div>
 
 			<div className="user-log">
